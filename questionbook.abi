@@ -1,0 +1,85 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Nov 11 11:49:09 2018",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "erase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "prompt",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "name"
+                },
+                {
+                    "name": "full_question",
+                    "type": "string"
+                },
+                {
+                    "name": "answer",
+                    "type": "string"
+                },
+                {
+                    "name": "citation",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "upsert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "full_question",
+                    "type": "string"
+                },
+                {
+                    "name": "answer",
+                    "type": "string"
+                },
+                {
+                    "name": "citation",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "erase",
+            "type": "erase",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upsert",
+            "type": "upsert",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "prompts",
+            "type": "prompt",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
